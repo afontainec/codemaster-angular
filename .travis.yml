@@ -2,11 +2,7 @@ language: node_js
 node_js:
  - "node"
 script:
-  - npm run test
-  - npm run coverage
-  - npm run linter
-after_success:
-  - npm run coveralls
+  - echo "SCRIPT"
 deploy:
   - provider: script
     skip_cleanup: true
